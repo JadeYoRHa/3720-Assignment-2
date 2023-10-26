@@ -1,12 +1,11 @@
 {
     "manifest_version": 3,
-    "name": "Ultimate Frame Data Advantage Calculator",
-    "description": "This extension is meant for the Street Fighter section of the website and is intended to help calculate frame advantage for moves that are changed by counterhit/punish counter or drive rush",
+    "name": "My Extension",
+    "description": "This extension is a starting point to create a real Chrome extension",
     "version": "1.0",
-    "content_scripts": [
+        "content_scripts": [
         {
-            "matches": [
-                "https://ultimateframedata.com/sf6/"
+            "matches": ["https://ultimateframedata.com/sf6/"
             ],
             "css": [
                 "styles.css"
