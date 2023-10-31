@@ -3,9 +3,10 @@
     "name": "My Extension",
     "description": "This extension is a starting point to create a real Chrome extension",
     "version": "1.0",
-        "content_scripts": [
+    "content_scripts": [
         {
-            "matches": ["https://ultimateframedata.com/sf6/"
+            "matches": [
+                "https://ultimateframedata.com/sf6/"
             ],
             "css": [
                 "styles.css"
