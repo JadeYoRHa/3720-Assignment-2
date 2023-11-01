@@ -1,8 +1,17 @@
-document.getElementById("ch").addEventListener("click", chAdvantage);
-document.getElementById("pc").addEventListener("click", pcAdvantage);
-document.getElementById("dr").addEventListener("click", drAdvantage);
-document.getElementById("bo").addEventListener("click", boAdvantage);
+const slider = document.getElementById("mySlider");
 
-function chAdvantage() {
-    console.log("chAdvantage");
-}
+slider.addEventListener("change", () => {
+    if (slider.checked) {
+        chEnabled();
+    } else {
+        chDisabled();
+    }
+});
+
+function chEnabled() {
+    console.log("counterhit modifier enabled");
+};
+
+function chDisabled() {
+    console.log("counterhit modifier disabled");
+};

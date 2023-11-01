@@ -1,12 +1,15 @@
 {
     "manifest_version": 3,
-    "name": "My Extension",
-    "description": "This extension is a starting point to create a real Chrome extension",
+    "name": "UltFrameData Modifier",
+    "description": "Extension to modify frame data in accordance with the options used in game",
     "version": "1.0",
+    "icons": {
+        "16": "images/Logo.png"
+    },
     "content_scripts": [
         {
             "matches": [
-                "https://ultimateframedata.com/sf6/"
+                "https://ultimateframedata.com/sf6/*"
             ],
             "css": [
                 "styles.css"

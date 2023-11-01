@@ -1,3 +1,76 @@
-body {
-    background-color: lightblue !important;
+
+/* Popup Layout */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
 }
+
+.chText {
+    font-size: 15px;
+    color: black;
+}
+
+/* Popup slider effects */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0; /* Align the slider to the right */
+    left: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left:3px;
+    bottom: 2.4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* Popup background */
+/* body {
+    background-color: red;
+} */
