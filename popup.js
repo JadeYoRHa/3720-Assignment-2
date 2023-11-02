@@ -9,9 +9,9 @@ slider.addEventListener("change", () => {
 });
 
 function chEnabled() {
-    console.log("counterhit modifier enabled");
+    
 };
 
 function chDisabled() {
-    console.log("counterhit modifier disabled");
-};
+    
+}
