@@ -14,3 +14,6 @@ Burnout is what occurs when the opponent has ran out of resources and has to tak
 Some characters have very unique attacks that are exceptions to the rules even in game so this code will not affect those particular moves.
 
 I created this project strictly to improve my enjoyment while practicing street fighter 6 in whatever free time I can find, practicing certain combos and blockstrings can be very difficult when you don't know the correct numbers based on how they were modified in game and so now I can pull up this website and extension on the side and find the numbers without even having to test them in the game. This streamlines the practice process a lot and will help me manage my time in game to practice more efficiently.
+
+
+I used https://www.w3schools.com/howto/howto_css_switch.asp to help make the slider on the popup.
