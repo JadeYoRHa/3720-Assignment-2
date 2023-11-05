@@ -1,12 +1,12 @@
 // chSlider Message Recieval and Action
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     if (request.chsliderStatus !== undefined) {
         if (request.chsliderStatus === true) {
             chEnabled();
         } else {
             chDisabled();
         }
-        sendResponse({status: 'Message received'});
+        sendResponse({ status: 'Message received' });
     }
 });
 
@@ -19,14 +19,14 @@ function chDisabled() {
 }
 
 // pcSlider Message Recieval and Action
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     if (request.pcsliderStatus !== undefined) {
         if (request.pcsliderStatus === true) {
             pcEnabled();
         } else {
             pcDisabled();
         }
-        sendResponse({status: 'Message received'});
+        sendResponse({ status: 'Message received' });
     }
 });
 
@@ -39,7 +39,7 @@ function pcDisabled() {
 }
 
 // drSlider Message Recieval and Action
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     if (request.drsliderStatus !== undefined) {
         if (request.drsliderStatus === true) {
             drhEnabled();
@@ -48,7 +48,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
             drhDisabled();
             drbDisabled();
         }
-        sendResponse({status: 'Message received'});
+        sendResponse({ status: 'Message received' });
     }
 });
 
@@ -61,14 +61,14 @@ function drhDisabled() {
 }
 
 // boSlider Message Recieval and Action
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     if (request.bosliderStatus !== undefined) {
         if (request.bosliderStatus === true) {
             boEnabled();
         } else {
             boDisabled();
         }
-        sendResponse({status: 'Message received'});
+        sendResponse({ status: 'Message received' });
     }
 });
 
@@ -99,9 +99,9 @@ function chEnabled() {
         console.log("num1:", num1);
         console.log("num2:", num2);
         console.log("num3:", num3);
-        let result1 = num1 + 3;
-        let result2 = num2 + 3;
-        let result3 = num3 + 3;
+        let result1 = num1 + 2;
+        let result2 = num2 + 2;
+        let result3 = num3 + 2;
         console.log("Result 1:", result1);
         console.log("Result 2:", result2);
         console.log("Result 3:", result3);
@@ -140,9 +140,9 @@ function chDisabled() {
         console.log("num1:", num1);
         console.log("num2:", num2);
         console.log("num3:", num3);
-        let result1 = num1 - 3;
-        let result2 = num2 - 3;
-        let result3 = num3 - 3;
+        let result1 = num1 - 2;
+        let result2 = num2 - 2;
+        let result3 = num3 - 2;
         console.log("Result 1:", result1);
         console.log("Result 2:", result2);
         console.log("Result 3:", result3);
